@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */; };
-		CE133AAF2955A29000428B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* ContentView.swift */; };
+		CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* LoginScreenView.swift */; };
 		CE133AB12955A29300428B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB02955A29300428B48 /* Assets.xcassets */; };
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
+		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE133AA92955A29000428B48 /* VK-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_SwiftUIApp.swift; sourceTree = "<group>"; };
-		CE133AAE2955A29000428B48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE133AAE2955A29000428B48 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		CE133AB02955A29300428B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */,
-				CE133AAE2955A29000428B48 /* ContentView.swift */,
+				CE133AC029586BB100428B48 /* LoginScreen */,
+				CE133ABD29586A9300428B48 /* Extensions */,
 				CE133AB02955A29300428B48 /* Assets.xcassets */,
 				CE133AB22955A29300428B48 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				CE133AB32955A29300428B48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE133ABD29586A9300428B48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE133AC029586BB100428B48 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE133AAE2955A29000428B48 /* LoginScreenView.swift */,
+			);
+			path = LoginScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE133AAF2955A29000428B48 /* ContentView.swift in Sources */,
+				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
+				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
