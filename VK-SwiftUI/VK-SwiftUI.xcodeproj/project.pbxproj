@@ -13,6 +13,7 @@
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
+		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC6ECC029599C9500C3E9FC /* FriendCell.swift */,
+				CEC6ECC2295A004700C3E9FC /* GroupCell.swift */,
 			);
 			path = CellsPrototype;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,

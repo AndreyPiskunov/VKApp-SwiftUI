@@ -1,5 +1,5 @@
 //
-//  FriendCell.swift
+//  GroupCell.swift
 //  VK-SwiftUI
 //
 //  Created by Andrey Piskunov on 26.12.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FriendCell: View {
+struct GroupCell: View {
     var body: some View {
         ZStack {
             Color.gray
@@ -22,12 +22,7 @@ struct FriendCell: View {
                     .shadow(color: .gray, radius: 1)
                     .padding(.leading, 10)
                     .padding(.vertical, 10)
-                Circle()
-                    .frame(width: 10, height: 10)
-                    .overlay(Color.green)
-                    .clipShape(Circle())
-                    .padding(.horizontal, 8)
-                Text("Name Friend")
+                Text("Group Name")
                     .font(.system(size: 20))
                     .lineLimit(2)
                     .layoutPriority(1)
@@ -40,8 +35,8 @@ struct FriendCell: View {
     }
 }
 
-struct FriendCell_Previews: PreviewProvider {
+struct GroupCell_Previews: PreviewProvider {
     static var previews: some View {
-        FriendCell()
+        GroupCell()
     }
 }
