@@ -13,15 +13,7 @@ struct FriendCell: View {
             Color.gray
                 .ignoresSafeArea()
             HStack {
-                Image("Image")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: 70)
-                    .clipShape(Circle())
-                    .background(Circle().fill(Color.white))
-                    .shadow(color: .gray, radius: 1)
-                    .padding(.leading, 10)
-                    .padding(.vertical, 10)
+                AvatarView()
                 Circle()
                     .frame(width: 10, height: 10)
                     .overlay(Color.green)

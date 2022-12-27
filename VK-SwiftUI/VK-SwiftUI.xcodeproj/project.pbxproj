@@ -14,6 +14,7 @@
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
+		CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		CEC6ECC4295A043900C3E9FC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CEC6ECC029599C9500C3E9FC /* FriendCell.swift */,
 				CEC6ECC2295A004700C3E9FC /* GroupCell.swift */,
+				CEC6ECC4295A043900C3E9FC /* AvatarView.swift */,
 			);
 			path = CellsPrototype;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */,
+				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,

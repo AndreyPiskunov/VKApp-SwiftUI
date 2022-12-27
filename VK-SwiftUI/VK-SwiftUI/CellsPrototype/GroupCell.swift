@@ -13,15 +13,7 @@ struct GroupCell: View {
             Color.gray
                 .ignoresSafeArea()
             HStack {
-                Image("Image")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: 70)
-                    .clipShape(Circle())
-                    .background(Circle().fill(Color.white))
-                    .shadow(color: .gray, radius: 1)
-                    .padding(.leading, 10)
-                    .padding(.vertical, 10)
+                AvatarView()
                 Text("Group Name")
                     .font(.system(size: 20))
                     .lineLimit(2)
@@ -34,7 +26,6 @@ struct GroupCell: View {
         }
     }
 }
-
 struct GroupCell_Previews: PreviewProvider {
     static var previews: some View {
         GroupCell()
