@@ -12,6 +12,7 @@
 		CE133AB12955A29300428B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB02955A29300428B48 /* Assets.xcassets */; };
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
+		CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB06364295ADFDA00292DBC /* CustomStack.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
 		CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* AvatarView.swift */; };
@@ -24,6 +25,7 @@
 		CE133AB02955A29300428B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
+		CEB06364295ADFDA00292DBC /* CustomStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStack.swift; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		CEC6ECC4295A043900C3E9FC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -59,9 +61,10 @@
 		CE133AAB2955A29000428B48 /* VK-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */,
+				CEB06367295AE24300292DBC /* Fundamental */,
 				CE133AC029586BB100428B48 /* LoginScreen */,
 				CEC6ECBD29599B6100C3E9FC /* CellsPrototype */,
+				CEB06366295AE0C600292DBC /* ViewBuillder */,
 				CE133ABD29586A9300428B48 /* Extensions */,
 				CE133AB02955A29300428B48 /* Assets.xcassets */,
 				CE133AB22955A29300428B48 /* Preview Content */,
@@ -91,6 +94,22 @@
 				CE133AAE2955A29000428B48 /* LoginScreenView.swift */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		CEB06366295AE0C600292DBC /* ViewBuillder */ = {
+			isa = PBXGroup;
+			children = (
+				CEB06364295ADFDA00292DBC /* CustomStack.swift */,
+			);
+			path = ViewBuillder;
+			sourceTree = "<group>";
+		};
+		CEB06367295AE24300292DBC /* Fundamental */ = {
+			isa = PBXGroup;
+			children = (
+				CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */,
+			);
+			path = Fundamental;
 			sourceTree = "<group>";
 		};
 		CEC6ECBD29599B6100C3E9FC /* CellsPrototype */ = {
@@ -176,6 +195,7 @@
 				CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */,
 				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
+				CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
 				CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */,

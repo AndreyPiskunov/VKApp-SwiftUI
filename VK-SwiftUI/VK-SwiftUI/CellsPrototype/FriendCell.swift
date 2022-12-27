@@ -9,9 +9,7 @@ import SwiftUI
 
 struct FriendCell: View {
     var body: some View {
-        ZStack {
-            Color.gray
-                .ignoresSafeArea()
+        CustomStack {
             HStack {
                 AvatarView()
                 Circle()
@@ -28,6 +26,7 @@ struct FriendCell: View {
             .background(Color.white)
             .cornerRadius(15)
             .padding(.horizontal, 5)
+            .padding(.vertical, 2)
         }
     }
 }

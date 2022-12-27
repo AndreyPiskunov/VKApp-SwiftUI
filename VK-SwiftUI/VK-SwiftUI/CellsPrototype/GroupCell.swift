@@ -9,9 +9,7 @@ import SwiftUI
 
 struct GroupCell: View {
     var body: some View {
-        ZStack {
-            Color.gray
-                .ignoresSafeArea()
+        CustomStack {
             HStack {
                 AvatarView()
                 Text("Group Name")
@@ -23,9 +21,11 @@ struct GroupCell: View {
             .background(Color.white)
             .cornerRadius(15)
             .padding(.horizontal, 5)
+            .padding(.vertical, 1)
         }
     }
 }
+
 struct GroupCell_Previews: PreviewProvider {
     static var previews: some View {
         GroupCell()
