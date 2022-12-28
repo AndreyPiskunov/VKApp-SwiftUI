@@ -11,7 +11,17 @@ import Combine
 struct LoginScreenView: View {
     @State private var login = ""
     @State private var password = ""
+    
     @State private var shouldShowLogo: Bool = true
+    @State private var showVerifyErrorAlert = false
+    
+    private func verifyLoginData() {
+        if login == "login" && password == "password" {
+        } else {
+            showVerifyErrorAlert = true
+        }
+        password = ""
+    }
     
     private let keyboardIsOnPublisher = Publishers.Merge(
         NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
@@ -52,7 +62,7 @@ struct LoginScreenView: View {
                         Spacer()
                             .frame(height: 40)
                         //Login button
-                        Button(action: {}) {
+                        Button(action: verifyLoginData) {
                             Text("Войти")
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -78,11 +88,14 @@ struct LoginScreenView: View {
         }.onTapGesture {
             UIApplication.shared.endEditing()
             
-        }.frame(maxWidth:.infinity, maxHeight: .infinity)
-            .background(Color("BrandColor").ignoresSafeArea())
+            
+        }.alert(isPresented: $showVerifyErrorAlert, content: { Alert(title: Text("Error"), message: Text("Incorrent Login/Password was entered"))
+        })
+        .frame(maxWidth:.infinity, maxHeight: .infinity)
+        .background(Color("BrandColor").ignoresSafeArea())
+        
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         LoginScreenView()
