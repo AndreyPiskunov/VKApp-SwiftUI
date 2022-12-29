@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */; };
-		CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* LoginScreenView.swift */; };
+		CE133AAF2955A29000428B48 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* LoginView.swift */; };
 		CE133AB12955A29300428B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB02955A29300428B48 /* Assets.xcassets */; };
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
-		CE5017AA295C391200AA33FF /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5017A9295C391200AA33FF /* StartScreen.swift */; };
+		CE279AA3295DC0CA000D08C6 /* CustomTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */; };
+		CE5017AA295C391200AA33FF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5017A9295C391200AA33FF /* StartView.swift */; };
+		CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571235295D7ED9009EA5C0 /* MainView.swift */; };
+		CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571237295D9267009EA5C0 /* NewsFeedView.swift */; };
+		CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571239295D92F5009EA5C0 /* FriendsListView.swift */; };
+		CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57123B295D935B009EA5C0 /* GroupsListView.swift */; };
 		CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB06364295ADFDA00292DBC /* CustomStack.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
@@ -22,11 +27,16 @@
 /* Begin PBXFileReference section */
 		CE133AA92955A29000428B48 /* VK-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_SwiftUIApp.swift; sourceTree = "<group>"; };
-		CE133AAE2955A29000428B48 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		CE133AAE2955A29000428B48 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE133AB02955A29300428B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
-		CE5017A9295C391200AA33FF /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBar.swift; sourceTree = "<group>"; };
+		CE5017A9295C391200AA33FF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CE571235295D7ED9009EA5C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE571237295D9267009EA5C0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
+		CE571239295D92F5009EA5C0 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
+		CE57123B295D935B009EA5C0 /* GroupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsListView.swift; sourceTree = "<group>"; };
 		CEB06364295ADFDA00292DBC /* CustomStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStack.swift; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
@@ -64,8 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB06367295AE24300292DBC /* Fundamental */,
-				CE5017A7295C383400AA33FF /* StartScreen */,
-				CE133AC029586BB100428B48 /* LoginScreen */,
+				CE5017A7295C383400AA33FF /* Views */,
 				CEC6ECBD29599B6100C3E9FC /* CellsPrototype */,
 				CEB06366295AE0C600292DBC /* ViewBuillder */,
 				CE133ABD29586A9300428B48 /* Extensions */,
@@ -91,20 +100,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CE133AC029586BB100428B48 /* LoginScreen */ = {
+		CE5017A7295C383400AA33FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE133AAE2955A29000428B48 /* LoginScreenView.swift */,
+				CE5017A9295C391200AA33FF /* StartView.swift */,
+				CE133AAE2955A29000428B48 /* LoginView.swift */,
+				CE571235295D7ED9009EA5C0 /* MainView.swift */,
+				CE571237295D9267009EA5C0 /* NewsFeedView.swift */,
+				CE571239295D92F5009EA5C0 /* FriendsListView.swift */,
+				CE57123B295D935B009EA5C0 /* GroupsListView.swift */,
+				CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */,
 			);
-			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		CE5017A7295C383400AA33FF /* StartScreen */ = {
-			isa = PBXGroup;
-			children = (
-				CE5017A9295C391200AA33FF /* StartScreen.swift */,
-			);
-			path = StartScreen;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CEB06366295AE0C600292DBC /* ViewBuillder */ = {
@@ -204,11 +211,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */,
+				CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */,
+				CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */,
+				CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */,
 				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
-				CE5017AA295C391200AA33FF /* StartScreen.swift in Sources */,
-				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
+				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
+				CE279AA3295DC0CA000D08C6 /* CustomTapBar.swift in Sources */,
+				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
 				CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
+				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
 				CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */,
 			);

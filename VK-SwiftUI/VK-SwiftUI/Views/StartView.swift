@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct StartScreenView: View {
+struct StartView: View {
     @State private var isActive = false
     @State private var size = 0.6
     @State private var opacity = 0.8
     
     var body: some View {
         if isActive {
-            LoginScreenView()
+            LoginView()
         } else {
             VStack {
                 VStack {
@@ -42,8 +42,8 @@ struct StartScreenView: View {
     }
 }
 
-struct StartScreenView_Previews: PreviewProvider {
+struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        StartScreenView()
+        StartView()
     }
 }
