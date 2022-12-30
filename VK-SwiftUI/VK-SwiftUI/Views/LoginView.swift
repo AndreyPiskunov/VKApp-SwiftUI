@@ -15,8 +15,11 @@ struct LoginView: View {
     @State private var shouldShowLogo: Bool = true
     @State private var showVerifyErrorAlert = false
     
+    @Binding var isUserAuth: Bool
+    
     private func verifyLoginData() {
         if login == "login" && password == "password" {
+            isUserAuth = true
         } else {
             showVerifyErrorAlert = true
         }
@@ -43,18 +46,21 @@ struct LoginView: View {
                     }
                     VStack {
                         //Login TextField
-                        TextField("Введите логин", text: $login)
+                        TextField("Enter login", text: $login)
                             .padding()
                             .background(Color.white)
+                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                             .cornerRadius(12)
                             .padding(8)
                             .padding(.top, 40)
                             .padding(.horizontal, 30)
                             .font(.title3)
+                            
                         //Password SecureField
-                        SecureField("Введите пароль", text: $password)
+                        SecureField("Enter password", text: $password)
                             .padding()
                             .background(Color.white)
+                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                             .cornerRadius(12)
                             .padding(8)
                             .padding(.horizontal, 30)
@@ -63,7 +69,7 @@ struct LoginView: View {
                             .frame(height: 40)
                         //Login button
                         Button(action: verifyLoginData) {
-                            Text("Войти")
+                            Text("Login")
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(Color("CustomGreen"))
@@ -73,8 +79,9 @@ struct LoginView: View {
                                 .padding(.horizontal, 30)
                                 .font(.title3.bold())
                                 .foregroundColor(.white)
-                        }.disabled(login.isEmpty || password.isEmpty)
-                        
+                        }
+                        .disabled(login.isEmpty || password.isEmpty)
+                            
                     }.background(Color("CustomLightGray"))
                         .cornerRadius(30)
                         .padding(15)
@@ -99,6 +106,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(isUserAuth: (.constant(false)))
     }
 }

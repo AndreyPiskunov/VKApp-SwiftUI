@@ -10,10 +10,10 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case newspaper = "newspaper"
     case friends = "person"
-    case groups = "person.2"
+    case groups = "person.3"
 }
 
-struct CustomTapBar: View {
+struct CustomTapBarView: View {
     @Binding var selectedTab: Tab
     
     private var fillImage: String {
@@ -47,6 +47,6 @@ struct CustomTapBar: View {
 
 struct CustomTapBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTapBar(selectedTab: .constant(.newspaper))
+        CustomTapBarView(selectedTab: .constant(.newspaper))
     }
 }

@@ -12,7 +12,8 @@
 		CE133AB12955A29300428B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB02955A29300428B48 /* Assets.xcassets */; };
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
-		CE279AA3295DC0CA000D08C6 /* CustomTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */; };
+		CE279AA3295DC0CA000D08C6 /* CustomTapBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE279AA2295DC0CA000D08C6 /* CustomTapBarView.swift */; };
+		CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE279AA4295DDF61000D08C6 /* AppView.swift */; };
 		CE5017AA295C391200AA33FF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5017A9295C391200AA33FF /* StartView.swift */; };
 		CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571235295D7ED9009EA5C0 /* MainView.swift */; };
 		CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571237295D9267009EA5C0 /* NewsFeedView.swift */; };
@@ -31,7 +32,8 @@
 		CE133AB02955A29300428B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
-		CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBar.swift; sourceTree = "<group>"; };
+		CE279AA2295DC0CA000D08C6 /* CustomTapBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBarView.swift; sourceTree = "<group>"; };
+		CE279AA4295DDF61000D08C6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		CE5017A9295C391200AA33FF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		CE571235295D7ED9009EA5C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE571237295D9267009EA5C0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
@@ -104,12 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				CE5017A9295C391200AA33FF /* StartView.swift */,
+				CE279AA4295DDF61000D08C6 /* AppView.swift */,
 				CE133AAE2955A29000428B48 /* LoginView.swift */,
 				CE571235295D7ED9009EA5C0 /* MainView.swift */,
 				CE571237295D9267009EA5C0 /* NewsFeedView.swift */,
 				CE571239295D92F5009EA5C0 /* FriendsListView.swift */,
 				CE57123B295D935B009EA5C0 /* GroupsListView.swift */,
-				CE279AA2295DC0CA000D08C6 /* CustomTapBar.swift */,
+				CE279AA2295DC0CA000D08C6 /* CustomTapBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,10 +219,11 @@
 				CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */,
 				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
 				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
-				CE279AA3295DC0CA000D08C6 /* CustomTapBar.swift in Sources */,
+				CE279AA3295DC0CA000D08C6 /* CustomTapBarView.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
 				CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
+				CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */,
 				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
 				CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */,
