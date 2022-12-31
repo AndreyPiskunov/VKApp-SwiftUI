@@ -19,10 +19,9 @@
 		CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571237295D9267009EA5C0 /* NewsFeedView.swift */; };
 		CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571239295D92F5009EA5C0 /* FriendsListView.swift */; };
 		CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57123B295D935B009EA5C0 /* GroupsListView.swift */; };
-		CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB06364295ADFDA00292DBC /* CustomStack.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
-		CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* AvatarView.swift */; };
+		CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +38,9 @@
 		CE571237295D9267009EA5C0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
 		CE571239295D92F5009EA5C0 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
 		CE57123B295D935B009EA5C0 /* GroupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsListView.swift; sourceTree = "<group>"; };
-		CEB06364295ADFDA00292DBC /* CustomStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStack.swift; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		CEC6ECC4295A043900C3E9FC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +75,10 @@
 			children = (
 				CEB06367295AE24300292DBC /* Fundamental */,
 				CE5017A7295C383400AA33FF /* Views */,
-				CEC6ECBD29599B6100C3E9FC /* CellsPrototype */,
-				CEB06366295AE0C600292DBC /* ViewBuillder */,
+				CEC6ECBD29599B6100C3E9FC /* Cells */,
 				CE133ABD29586A9300428B48 /* Extensions */,
-				CE133AB02955A29300428B48 /* Assets.xcassets */,
 				CE133AB22955A29300428B48 /* Preview Content */,
+				CE133AB02955A29300428B48 /* Assets.xcassets */,
 			);
 			path = "VK-SwiftUI";
 			sourceTree = "<group>";
@@ -117,14 +114,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CEB06366295AE0C600292DBC /* ViewBuillder */ = {
-			isa = PBXGroup;
-			children = (
-				CEB06364295ADFDA00292DBC /* CustomStack.swift */,
-			);
-			path = ViewBuillder;
-			sourceTree = "<group>";
-		};
 		CEB06367295AE24300292DBC /* Fundamental */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,14 +122,14 @@
 			path = Fundamental;
 			sourceTree = "<group>";
 		};
-		CEC6ECBD29599B6100C3E9FC /* CellsPrototype */ = {
+		CEC6ECBD29599B6100C3E9FC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				CEC6ECC029599C9500C3E9FC /* FriendCell.swift */,
 				CEC6ECC2295A004700C3E9FC /* GroupCell.swift */,
-				CEC6ECC4295A043900C3E9FC /* AvatarView.swift */,
+				CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */,
 			);
-			path = CellsPrototype;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +206,10 @@
 				CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */,
 				CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */,
 				CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */,
-				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
+				CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */,
 				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
 				CE279AA3295DC0CA000D08C6 /* CustomTapBarView.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
-				CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */,
 				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,

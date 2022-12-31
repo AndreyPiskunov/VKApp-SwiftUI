@@ -9,8 +9,8 @@ import SwiftUI
 import Combine
 
 struct LoginView: View {
-    @State private var login = ""
-    @State private var password = ""
+    @State private var login = "login"
+    @State private var password = "password"
     
     @State private var shouldShowLogo: Bool = true
     @State private var showVerifyErrorAlert = false
@@ -55,7 +55,6 @@ struct LoginView: View {
                             .padding(.top, 40)
                             .padding(.horizontal, 30)
                             .font(.title3)
-                            
                         //Password SecureField
                         SecureField("Enter password", text: $password)
                             .padding()

@@ -15,26 +15,25 @@ struct MainView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                VStack {
-                    TabView(selection: $selectedTab) {
-                        HStack {
-                            if selectedTab == .newspaper{
-                                NewsFeedView()
-                            }
-                            if selectedTab == .friends {
-                                FriendsListView() }
-                            if selectedTab == .groups {
-                                GroupsListView()
-                            }
-                        }.animation(nil, value: selectedTab)
-                    }
+        ZStack {
+            NavigationView {
+                TabView(selection: $selectedTab) {
+                    HStack {
+                        if selectedTab == .newspaper {
+                            NewsFeedView()
+                        }
+                        if selectedTab == .friends {
+                            FriendsListView()
+                        }
+                        if selectedTab == .groups {
+                            GroupsListView()
+                        }
+                    }.animation(nil, value: selectedTab)
                 }
-                VStack {
-                    Spacer()
-                    CustomTapBarView(selectedTab: $selectedTab)
-                }
+            }
+            VStack {
+                Spacer()
+                CustomTapBarView(selectedTab: $selectedTab)
             }
         }
     }

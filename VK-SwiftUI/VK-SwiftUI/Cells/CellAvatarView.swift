@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-struct AvatarView: View {
+struct CellAvatarView: View {
     var body: some View {
         Image("Image")
             .resizable()
             .scaledToFit()
             .modifier(AvatarStyleModifier(shadowColor: .gray,
                                           shadowRadius: 3))
-            .padding(.leading, 10)
-            .padding(.vertical, 10)
     }
 }
 
@@ -34,6 +32,6 @@ struct AvatarStyleModifier: ViewModifier {
 
 struct AvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarView()
+        CellAvatarView()
     }
 }

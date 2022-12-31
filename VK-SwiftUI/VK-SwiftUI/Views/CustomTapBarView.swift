@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+enum Names: String, CaseIterable {
+    case news = "News"
+}
 
 enum Tab: String, CaseIterable {
     case newspaper = "newspaper"

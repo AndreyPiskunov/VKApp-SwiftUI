@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NewsFeedView: View {
-    @State private var selectedTab: Tab = .newspaper
     
     var body: some View {
         Text("News")
