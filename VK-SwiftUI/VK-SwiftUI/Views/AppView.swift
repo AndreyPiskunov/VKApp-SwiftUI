@@ -14,7 +14,7 @@ struct AppView: View {
         
         HStack {
             if isUserAuth {
-                MainView(selectedTab: .newspaper)
+                MainView()
             } else {
                 LoginView(isUserAuth: $isUserAuth)
             }

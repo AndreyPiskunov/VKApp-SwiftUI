@@ -30,7 +30,7 @@ struct AvatarStyleModifier: ViewModifier {
     }
 }
 
-struct AvatarView_Previews: PreviewProvider {
+struct CellAvatarView_Previews: PreviewProvider {
     static var previews: some View {
         CellAvatarView()
     }
