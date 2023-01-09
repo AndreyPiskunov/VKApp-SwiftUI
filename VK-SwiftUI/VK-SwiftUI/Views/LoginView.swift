@@ -80,26 +80,24 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                         }
                         .disabled(login.isEmpty || password.isEmpty)
-                            
-                    }.background(Color("CustomLightGray"))
-                        .cornerRadius(30)
-                        .padding(15)
+                    }
+                    .background(Color("CustomLightGray"))
+                    .cornerRadius(30)
+                    .padding(15)
                 }
-                
-            }.onReceive(keyboardIsOnPublisher) { iskeyboardOn in
+            }
+            .onReceive(keyboardIsOnPublisher) { iskeyboardOn in
                 withAnimation(Animation.easeInOut(duration: 0.5)) {
                     shouldShowLogo = !iskeyboardOn }
             }
-            
-        }.onTapGesture {
+        }
+        .onTapGesture {
             UIApplication.shared.endEditing()
-            
-            
-        }.alert(isPresented: $showVerifyErrorAlert, content: { Alert(title: Text("Error"), message: Text("Incorrent Login/Password was entered"))
+        }
+        .alert(isPresented: $showVerifyErrorAlert, content: { Alert(title: Text("Error"), message: Text("Incorrent Login/Password was entered"))
         })
         .frame(maxWidth:.infinity, maxHeight: .infinity)
         .background(Color("BrandColor").ignoresSafeArea())
-        
     }
 }
 

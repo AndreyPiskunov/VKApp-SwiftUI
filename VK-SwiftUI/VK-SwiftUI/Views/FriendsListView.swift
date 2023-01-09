@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct Friend: Identifiable {
-    let id: Int
-    let firstName: String
-    let lastName: String
-    let avatar: Image
-}
-
 struct FriendsListView: View {
     @State private var friends: [Friend] = [
         Friend(id: 0, firstName: "Sergey", lastName: "Ivanov", avatar: Image(systemName: "")),
@@ -23,7 +16,7 @@ struct FriendsListView: View {
     var body: some View {
         List(friends) { friend in
             NavigationLink {
-//                                Gallery(friend: friend)
+                GalleryView(friend: friend)
             } label: {
                 FriendCell(friend: friend)
             }

@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Group: Identifiable {
-    let id: Int
-    let name: String
-    let avatar: Image
-}
-
 struct GroupsListView: View {
     @State private var groups: [Group] = [
         Group(id: 0, name: "iOS Developers", avatar: Image(systemName: "")),
