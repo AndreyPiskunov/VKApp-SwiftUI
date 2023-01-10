@@ -17,8 +17,9 @@ struct GroupsListView: View {
         List(groups) { group in
             NavigationLink {
             } label: {
-                GroupCell(group: group)
+                GroupRow(group: group)
             }
+            .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
     }

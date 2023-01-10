@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct FriendCell: View {
+struct FriendRow: View {
     let friend: Friend
     
     var body: some View {
         HStack {
             CellAvatarView()
-                .padding(.leading, 5)
-                .padding(.vertical, 5)
             Circle()
                 .frame(width: 10, height: 10)
                 .overlay(Color.green)
@@ -26,18 +24,17 @@ struct FriendCell: View {
                 .layoutPriority(1)
             Spacer()
         }
-        .background(Color.white)
-        .cornerRadius(15)
+        .frame(height: 50)
     }
 }
 
-struct FriendCell_Previews: PreviewProvider {
+struct FriendRow_Previews: PreviewProvider {
     
     static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatar: Image(systemName: ""))
     
     static var previews: some View {
         List {
-            FriendCell(friend: friend)
+            FriendRow(friend: friend)
         }
     }
 }

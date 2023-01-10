@@ -24,13 +24,15 @@ struct GalleryView: View {
                 itemSpacing: 4,
                 lineSpacing: 20
             )
-        }.padding(.top, 20)
+        }
+        .padding(.top, 20)
+        .navigationTitle("Gallery")
     }
 }
 
 struct GalleryView_Previews: PreviewProvider {
     static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatar: Image(systemName: ""))
-
+    
     static var previews: some View {
         GalleryView(friend: friend)
     }

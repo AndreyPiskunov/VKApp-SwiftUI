@@ -18,8 +18,9 @@ struct FriendsListView: View {
             NavigationLink {
                 GalleryView(friend: friend)
             } label: {
-                FriendCell(friend: friend)
+                FriendRow(friend: friend)
             }
+            .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
     }

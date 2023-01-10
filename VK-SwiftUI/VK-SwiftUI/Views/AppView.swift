@@ -11,7 +11,6 @@ struct AppView: View {
     @State private var isUserAuth: Bool = false
     
     var body: some View {
-        
         HStack {
             if isUserAuth {
                 MainView()

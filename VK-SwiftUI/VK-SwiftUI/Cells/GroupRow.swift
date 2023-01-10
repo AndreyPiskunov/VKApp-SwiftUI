@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct GroupCell: View {
+struct GroupRow: View {
     let group: Group
     
     var body: some View {
         HStack {
             CellAvatarView()
-                .padding(.leading, 5)
-                .padding(.vertical, 5)
             Text("\(group.name)")
                 .font(.system(size: 20))
                 .lineLimit(2)
@@ -22,17 +20,16 @@ struct GroupCell: View {
                 .padding()
             Spacer()
         }
-        .background(Color.white)
-        .cornerRadius(15)
+        .frame(height: 50)
     }
 }
 
-struct GroupCell_Previews: PreviewProvider {
+struct GroupRow_Previews: PreviewProvider {
     static let group: Group = Group(id: 0, name: "Name", avatar: Image(systemName: ""))
     
     static var previews: some View {
         List {
-            GroupCell(group: group)
+            GroupRow(group: group)
         }
     }
 }
