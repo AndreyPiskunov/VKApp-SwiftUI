@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct VK_SwiftUIApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            StartScreenView()
+            StartView()
         }
     }
 }

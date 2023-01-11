@@ -8,29 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */; };
-		CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* LoginScreenView.swift */; };
+		CE133AAF2955A29000428B48 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133AAE2955A29000428B48 /* LoginView.swift */; };
 		CE133AB12955A29300428B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB02955A29300428B48 /* Assets.xcassets */; };
 		CE133AB42955A29300428B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE133AB32955A29300428B48 /* Preview Assets.xcassets */; };
 		CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */; };
-		CE5017AA295C391200AA33FF /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5017A9295C391200AA33FF /* StartScreen.swift */; };
-		CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB06364295ADFDA00292DBC /* CustomStack.swift */; };
-		CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendCell.swift */; };
-		CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupCell.swift */; };
-		CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* AvatarView.swift */; };
+		CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE279AA4295DDF61000D08C6 /* AppView.swift */; };
+		CE5017AA295C391200AA33FF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5017A9295C391200AA33FF /* StartView.swift */; };
+		CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571235295D7ED9009EA5C0 /* MainView.swift */; };
+		CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571237295D9267009EA5C0 /* NewsFeedView.swift */; };
+		CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE571239295D92F5009EA5C0 /* FriendsListView.swift */; };
+		CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57123B295D935B009EA5C0 /* GroupsListView.swift */; };
+		CE634FF7296AF6230047A375 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE634FF6296AF6230047A375 /* FriendModel.swift */; };
+		CE634FF9296AF6D80047A375 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE634FF8296AF6D80047A375 /* GroupModel.swift */; };
+		CE634FFB296AFD4E0047A375 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE634FFA296AFD4E0047A375 /* GalleryView.swift */; };
+		CE634FFE296B013B0047A375 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = CE634FFD296B013B0047A375 /* ASCollectionView */; };
+		CE635000296B185B0047A375 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE634FFF296B185B0047A375 /* PhotoModel.swift */; };
+		CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendRow.swift */; };
+		CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupRow.swift */; };
+		CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE133AA92955A29000428B48 /* VK-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE133AAC2955A29000428B48 /* VK_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_SwiftUIApp.swift; sourceTree = "<group>"; };
-		CE133AAE2955A29000428B48 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		CE133AAE2955A29000428B48 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE133AB02955A29300428B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE133AB32955A29300428B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUI.swift; sourceTree = "<group>"; };
-		CE5017A9295C391200AA33FF /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
-		CEB06364295ADFDA00292DBC /* CustomStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStack.swift; sourceTree = "<group>"; };
-		CEC6ECC029599C9500C3E9FC /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
-		CEC6ECC2295A004700C3E9FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		CEC6ECC4295A043900C3E9FC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CE279AA4295DDF61000D08C6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		CE5017A9295C391200AA33FF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CE571235295D7ED9009EA5C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE571237295D9267009EA5C0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
+		CE571239295D92F5009EA5C0 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
+		CE57123B295D935B009EA5C0 /* GroupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsListView.swift; sourceTree = "<group>"; };
+		CE634FF6296AF6230047A375 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		CE634FF8296AF6D80047A375 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		CE634FFA296AFD4E0047A375 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		CE634FFF296B185B0047A375 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		CEBF93D529685106003CCD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEC6ECC029599C9500C3E9FC /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
+		CEC6ECC2295A004700C3E9FC /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
+		CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE634FFE296B013B0047A375 /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,13 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				CEB06367295AE24300292DBC /* Fundamental */,
-				CE5017A7295C383400AA33FF /* StartScreen */,
-				CE133AC029586BB100428B48 /* LoginScreen */,
-				CEC6ECBD29599B6100C3E9FC /* CellsPrototype */,
-				CEB06366295AE0C600292DBC /* ViewBuillder */,
+				CE634FF5296AF5FC0047A375 /* Models */,
+				CE5017A7295C383400AA33FF /* Views */,
+				CEC6ECBD29599B6100C3E9FC /* Cells */,
 				CE133ABD29586A9300428B48 /* Extensions */,
-				CE133AB02955A29300428B48 /* Assets.xcassets */,
 				CE133AB22955A29300428B48 /* Preview Content */,
+				CE133AB02955A29300428B48 /* Assets.xcassets */,
+				CEBF93D529685106003CCD82 /* Info.plist */,
 			);
 			path = "VK-SwiftUI";
 			sourceTree = "<group>";
@@ -91,28 +110,29 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CE133AC029586BB100428B48 /* LoginScreen */ = {
+		CE5017A7295C383400AA33FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE133AAE2955A29000428B48 /* LoginScreenView.swift */,
+				CE5017A9295C391200AA33FF /* StartView.swift */,
+				CE279AA4295DDF61000D08C6 /* AppView.swift */,
+				CE133AAE2955A29000428B48 /* LoginView.swift */,
+				CE571235295D7ED9009EA5C0 /* MainView.swift */,
+				CE571237295D9267009EA5C0 /* NewsFeedView.swift */,
+				CE571239295D92F5009EA5C0 /* FriendsListView.swift */,
+				CE57123B295D935B009EA5C0 /* GroupsListView.swift */,
+				CE634FFA296AFD4E0047A375 /* GalleryView.swift */,
 			);
-			path = LoginScreen;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		CE5017A7295C383400AA33FF /* StartScreen */ = {
+		CE634FF5296AF5FC0047A375 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE5017A9295C391200AA33FF /* StartScreen.swift */,
+				CE634FF6296AF6230047A375 /* FriendModel.swift */,
+				CE634FF8296AF6D80047A375 /* GroupModel.swift */,
+				CE634FFF296B185B0047A375 /* PhotoModel.swift */,
 			);
-			path = StartScreen;
-			sourceTree = "<group>";
-		};
-		CEB06366295AE0C600292DBC /* ViewBuillder */ = {
-			isa = PBXGroup;
-			children = (
-				CEB06364295ADFDA00292DBC /* CustomStack.swift */,
-			);
-			path = ViewBuillder;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CEB06367295AE24300292DBC /* Fundamental */ = {
@@ -123,14 +143,14 @@
 			path = Fundamental;
 			sourceTree = "<group>";
 		};
-		CEC6ECBD29599B6100C3E9FC /* CellsPrototype */ = {
+		CEC6ECBD29599B6100C3E9FC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CEC6ECC029599C9500C3E9FC /* FriendCell.swift */,
-				CEC6ECC2295A004700C3E9FC /* GroupCell.swift */,
-				CEC6ECC4295A043900C3E9FC /* AvatarView.swift */,
+				CEC6ECC029599C9500C3E9FC /* FriendRow.swift */,
+				CEC6ECC2295A004700C3E9FC /* GroupRow.swift */,
+				CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */,
 			);
-			path = CellsPrototype;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +169,9 @@
 			dependencies = (
 			);
 			name = "VK-SwiftUI";
+			packageProductDependencies = (
+				CE634FFD296B013B0047A375 /* ASCollectionView */,
+			);
 			productName = "VK-SwiftUI";
 			productReference = CE133AA92955A29000428B48 /* VK-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +200,9 @@
 				Base,
 			);
 			mainGroup = CE133AA02955A29000428B48;
+			packageReferences = (
+				CE634FFC296B013B0047A375 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = CE133AAA2955A29000428B48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,14 +229,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC6ECC3295A004700C3E9FC /* GroupCell.swift in Sources */,
-				CEC6ECC5295A043900C3E9FC /* AvatarView.swift in Sources */,
-				CE5017AA295C391200AA33FF /* StartScreen.swift in Sources */,
-				CE133AAF2955A29000428B48 /* LoginScreenView.swift in Sources */,
-				CEB06365295ADFDA00292DBC /* CustomStack.swift in Sources */,
+				CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */,
+				CE634FF9296AF6D80047A375 /* GroupModel.swift in Sources */,
+				CE571238295D9267009EA5C0 /* NewsFeedView.swift in Sources */,
+				CE57123C295D935B009EA5C0 /* GroupsListView.swift in Sources */,
+				CE634FFB296AFD4E0047A375 /* GalleryView.swift in Sources */,
+				CE571236295D7ED9009EA5C0 /* MainView.swift in Sources */,
+				CE635000296B185B0047A375 /* PhotoModel.swift in Sources */,
+				CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */,
+				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
+				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
+				CE634FF7296AF6230047A375 /* FriendModel.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
+				CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */,
+				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
-				CEC6ECC129599C9500C3E9FC /* FriendCell.swift in Sources */,
+				CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +376,12 @@
 				DEVELOPMENT_TEAM = 8C2J2DRGH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VK-SwiftUI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,9 +408,12 @@
 				DEVELOPMENT_TEAM = 8C2J2DRGH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VK-SwiftUI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,6 +451,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE634FFC296B013B0047A375 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE634FFD296B013B0047A375 /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE634FFC296B013B0047A375 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE133AA12955A29000428B48 /* Project object */;
 }
