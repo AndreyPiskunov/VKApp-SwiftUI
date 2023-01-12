@@ -26,6 +26,7 @@
 		CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendRow.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupRow.swift */; };
 		CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */; };
+		CECD1F21296EF02F00250862 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD1F20296EF02F00250862 /* VKLoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CEC6ECC029599C9500C3E9FC /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 		CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAvatarView.swift; sourceTree = "<group>"; };
+		CECD1F20296EF02F00250862 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +115,9 @@
 		CE5017A7295C383400AA33FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CECD1F1F296EEF1000250862 /* Login */,
 				CE5017A9295C391200AA33FF /* StartView.swift */,
 				CE279AA4295DDF61000D08C6 /* AppView.swift */,
-				CE133AAE2955A29000428B48 /* LoginView.swift */,
 				CE571235295D7ED9009EA5C0 /* MainView.swift */,
 				CE571237295D9267009EA5C0 /* NewsFeedView.swift */,
 				CE571239295D92F5009EA5C0 /* FriendsListView.swift */,
@@ -151,6 +153,15 @@
 				CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CECD1F1F296EEF1000250862 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE133AAE2955A29000428B48 /* LoginView.swift */,
+				CECD1F20296EF02F00250862 /* VKLoginWebView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
 				CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */,
+				CECD1F21296EF02F00250862 /* VKLoginWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
