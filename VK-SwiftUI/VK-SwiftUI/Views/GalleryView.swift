@@ -30,10 +30,10 @@ struct GalleryView: View {
     }
 }
 
-struct GalleryView_Previews: PreviewProvider {
-    static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatar: Image(systemName: ""))
-    
-    static var previews: some View {
-        GalleryView(friend: friend)
-    }
-}
+//struct GalleryView_Previews: PreviewProvider {
+////    static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatarUrlString: "")
+//    
+//    static var previews: some View {
+////        GalleryView(friend: friend)
+//    }
+//}

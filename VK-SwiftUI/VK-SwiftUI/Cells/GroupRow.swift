@@ -12,7 +12,7 @@ struct GroupRow: View {
     
     var body: some View {
         HStack {
-            CellAvatarView()
+//            CellAvatarView()
             Text("\(group.name)")
                 .font(.system(size: 20))
                 .lineLimit(2)

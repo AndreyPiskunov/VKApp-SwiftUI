@@ -20,6 +20,7 @@ struct GroupsListView: View {
                 GroupRow(group: group)
             }
             .listRowSeparator(.hidden)
+            .padding(5)
         }
         .listStyle(.plain)
     }

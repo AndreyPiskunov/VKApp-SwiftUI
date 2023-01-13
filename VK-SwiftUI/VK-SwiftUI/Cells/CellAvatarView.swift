@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CellAvatarView: View {
+    let url: URL?
+    
     var body: some View {
-        Image("Image")
-            .resizable()
+        AsyncImage(url: url)
+//            .resizable()
             .scaledToFit()
             .modifier(AvatarStyleModifier(shadowColor: .gray,
                                           shadowRadius: 3))
@@ -31,7 +33,8 @@ struct AvatarStyleModifier: ViewModifier {
 }
 
 struct CellAvatarView_Previews: PreviewProvider {
+    static let url = URL(string: "")
     static var previews: some View {
-        CellAvatarView()
+        CellAvatarView(url: url)
     }
 }

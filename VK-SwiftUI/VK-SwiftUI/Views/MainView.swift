@@ -35,7 +35,7 @@ struct MainView: View {
                 NewsFeedView()
                     .tabItem { Label("News", systemImage: "newspaper") }
                     .tag(Tabs.news)
-                FriendsListView()
+                FriendsListView(viewModel: FriendViewModel())
                     .tabItem { Label("Friends", systemImage: "person") }
                     .tag(Tabs.friends)
                 GroupsListView()

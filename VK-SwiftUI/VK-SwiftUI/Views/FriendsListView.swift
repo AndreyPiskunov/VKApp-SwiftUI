@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct FriendsListView: View {
-    @State private var friends: [Friend] = [
-        Friend(id: 0, firstName: "Sergey", lastName: "Ivanov", avatar: Image(systemName: "")),
-        Friend(id: 1, firstName: "Andrey", lastName: "Petrov", avatar: Image(systemName: ""))
-    ]
+    @ObservedObject var viewModel: FriendViewModel
+    
+    init(viewModel: FriendViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        List(friends) { friend in
+        List(viewModel.friends) { friend in
             NavigationLink {
-                GalleryView(friend: friend)
+//TODO:                GalleryView(friend: friend)
             } label: {
                 FriendRow(friend: friend)
             }
             .listRowSeparator(.hidden)
+            .padding(5)
         }
+        .onAppear { viewModel.fetch() }
         .listStyle(.plain)
     }
 }
@@ -29,7 +32,7 @@ struct FriendsListView: View {
 struct FriendsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            FriendsListView()
+            FriendsListView(viewModel: FriendViewModel())
         }
     }
 }
