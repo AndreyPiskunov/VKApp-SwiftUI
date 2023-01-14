@@ -21,7 +21,7 @@ class NetworkService {
     func getFriends(completion: @escaping ([Friend]) -> Void) {
         
         let path = "/method/friends.get"
-        let params = ["fields" : "photo_100,online,friend_status"]
+        let params = ["fields":"photo_100,online,friend_status"]
         
         guard let url = url(from: path, params: params) else { return }
         request(url: url) { json in
@@ -34,6 +34,25 @@ class NetworkService {
             }
         }
     }
+    
+    //MARK: - Groups
+    
+    func getGroups(completion: @escaping ([Group]) -> Void) {
+        let path = "/method/groups.get"
+        let params = ["user_id" : UserDefaults.standard.string(forKey: "userId") ?? "0","extended":"1"]
+        
+        guard let url = url(from: path, params: params) else { return }
+        request(url: url) { json in
+            do {
+                let groups = try JSONDecoder()
+                    .decode(VKResponse<Group>.self, from: json)
+                completion(groups.response.items)
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
     // MARK: - Private functions
     
     private func url(from path: String, params: [String: String]) -> URL? {

@@ -16,7 +16,7 @@ struct AppView: View {
             if isUserAuth || token != nil {
                 MainView()
             } else {
-//                LoginView(isUserAuth: $isUserAuth)
+                //                LoginView(isUserAuth: $isUserAuth)
                 VKLoginWebView()
             }
         }
