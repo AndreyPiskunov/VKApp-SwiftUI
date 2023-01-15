@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct NewsFeedView: View {
+    @ObservedObject var viewModel: NewsViewModel
+    
+    init(viewModel: NewsViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        Text("News")
+        List(viewModel.news) { news in
+            NewsRow(news: news)
+        }
+        .listStyle(.plain)
+        .onAppear {
+            viewModel.fetch()
+        }
     }
 }
 
 struct NewsFeedView_Previews: PreviewProvider {
     static var previews: some View {
-        NewsFeedView()
+        NavigationView {
+            NewsFeedView(viewModel: NewsViewModel())
+        }
     }
 }

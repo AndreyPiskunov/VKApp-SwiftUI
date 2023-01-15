@@ -15,12 +15,12 @@ struct Response<T: Codable>: Codable {
     let items: [T]
     let profiles: [Friend]?
     let groups: [Group]?
-//    let nextFrom: String?
+    let nextFrom: String?
 
     enum CodingKeys: String, CodingKey {
         case items
         case profiles
         case groups
-//        case nextFrom = "next_from"
+        case nextFrom = "next_from"
     }
 }

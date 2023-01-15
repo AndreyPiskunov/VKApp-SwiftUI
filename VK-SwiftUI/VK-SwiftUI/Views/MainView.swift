@@ -32,7 +32,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                NewsFeedView()
+                NewsFeedView(viewModel: NewsViewModel())
                     .tabItem { Label("News", systemImage: "newspaper") }
                     .tag(Tabs.news)
                 FriendsListView(viewModel: FriendViewModel())

@@ -31,6 +31,11 @@
 		CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupRow.swift */; };
 		CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */; };
 		CECD1F21296EF02F00250862 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD1F20296EF02F00250862 /* VKLoginWebView.swift */; };
+		CED3753A2973D81A002D2471 /* OnlineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED375392973D81A002D2471 /* OnlineStatusView.swift */; };
+		CED3753C2973D9C3002D2471 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3753B2973D9C3002D2471 /* NewsViewModel.swift */; };
+		CED3753E2973DA63002D2471 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3753D2973DA63002D2471 /* NewsModel.swift */; };
+		CED375402973E010002D2471 /* NewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3753F2973E010002D2471 /* NewsRow.swift */; };
+		CED375422973E1BC002D2471 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED375412973E1BC002D2471 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,11 @@
 		CEC6ECC2295A004700C3E9FC /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 		CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAvatarView.swift; sourceTree = "<group>"; };
 		CECD1F20296EF02F00250862 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
+		CED375392973D81A002D2471 /* OnlineStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineStatusView.swift; sourceTree = "<group>"; };
+		CED3753B2973D9C3002D2471 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		CED3753D2973DA63002D2471 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		CED3753F2973E010002D2471 /* NewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
+		CED375412973E1BC002D2471 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				CE133ABE29586ADD00428B48 /* ExtensionsUI.swift */,
+				CED375412973E1BC002D2471 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				CE14156929714DF300A64F2C /* Response.swift */,
+				CED3753D2973DA63002D2471 /* NewsModel.swift */,
+				CED3753B2973D9C3002D2471 /* NewsViewModel.swift */,
 				CE634FF6296AF6230047A375 /* FriendModel.swift */,
 				CE1415672971422800A64F2C /* FriendViewModel.swift */,
 				CE634FF8296AF6D80047A375 /* GroupModel.swift */,
@@ -170,7 +183,9 @@
 			children = (
 				CEC6ECC029599C9500C3E9FC /* FriendRow.swift */,
 				CEC6ECC2295A004700C3E9FC /* GroupRow.swift */,
+				CED3753F2973E010002D2471 /* NewsRow.swift */,
 				CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */,
+				CED375392973D81A002D2471 /* OnlineStatusView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -260,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED3753E2973DA63002D2471 /* NewsModel.swift in Sources */,
 				CE1415682971422800A64F2C /* FriendViewModel.swift in Sources */,
 				CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */,
 				CE634FF9296AF6D80047A375 /* GroupModel.swift in Sources */,
@@ -273,8 +289,12 @@
 				CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */,
 				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
+				CED3753A2973D81A002D2471 /* OnlineStatusView.swift in Sources */,
+				CED375422973E1BC002D2471 /* Date+Extension.swift in Sources */,
 				CE14156A29714DF300A64F2C /* Response.swift in Sources */,
+				CED3753C2973D9C3002D2471 /* NewsViewModel.swift in Sources */,
 				CE634FF7296AF6230047A375 /* FriendModel.swift in Sources */,
+				CED375402973E010002D2471 /* NewsRow.swift in Sources */,
 				CE133ABF29586ADD00428B48 /* ExtensionsUI.swift in Sources */,
 				CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */,
 				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,

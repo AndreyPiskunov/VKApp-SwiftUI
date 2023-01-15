@@ -24,23 +24,6 @@ struct FriendRow: View {
     }
 }
 
-struct OnlineStatusView <Content: Shape>: View {
-    let status: Int?
-    let content: Content
-    init(status: Int?, @ViewBuilder content: () -> Content) {
-        self.content = content()
-        self.status = status
-    }
-    var body: some View {
-        content
-            .frame(width: 10, height: 10)
-            .overlay(status == 1 ? Color.green : Color.gray)
-            .clipShape(Circle())
-            .padding(8)
-    }
-}
-
-
 struct FriendRow_Previews: PreviewProvider {
     
     static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatarUrlString: "", networkStatus: 1)
