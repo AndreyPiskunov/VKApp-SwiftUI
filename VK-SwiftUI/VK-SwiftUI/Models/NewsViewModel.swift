@@ -13,8 +13,7 @@ class NewsViewModel: ObservableObject {
     private let networkService = NetworkService()
     
     func fetch() {
-        networkService.getNewsfeed { [weak self]
-            data, _ in
+        networkService.getNewsfeed { [weak self] data, _ in
             self?.news = data
         }
     }

@@ -13,8 +13,7 @@ class GroupViewModel: ObservableObject {
     private let networkService = NetworkService()
     
     func fetch() {
-        networkService.getGroups { [weak self]
-            data in
+        networkService.getGroups { [weak self] data in
             self?.groups = data
         }
     }

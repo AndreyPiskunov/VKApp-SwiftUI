@@ -17,7 +17,7 @@ struct FriendsListView: View {
     var body: some View {
         List(viewModel.friends) { friend in
             NavigationLink {
-//TODO:                GalleryView(friend: friend)
+                Gallery(viewModel: PhotoViewModel(), friend: friend)
             } label: {
                 FriendRow(friend: friend)
             }

@@ -34,12 +34,33 @@ class NetworkService {
             }
         }
     }
+    //MARK: - Photos
+    
+    func getPhotos(userId: Int, completion: @escaping ([Photo]) -> Void) {
+        let path = "/method/photos.getAll"
+        let params = [
+            "owner_id" : "\(userId)",
+            "extended" : "1",
+            "count" : "200"
+        ]
+        guard let url = url(from: path, params: params) else { return }
+        request(url: url) { json in
+            do {
+                let photos = try JSONDecoder()
+                    .decode(VKResponse<Photo>.self, from: json)
+                completion(photos.response.items)
+            } catch {
+                print(error)
+            }
+        }
+    }
     
     //MARK: - Groups
     
     func getGroups(completion: @escaping ([Group]) -> Void) {
         let path = "/method/groups.get"
-        let params = ["user_id" : UserDefaults.standard.string(forKey: "userId") ?? "0","extended":"1"]
+        let params = ["user_id" : UserDefaults.standard.string(forKey: "userId") ?? "0",
+                      "extended":"1"]
         
         guard let url = url(from: path, params: params) else { return }
         request(url: url) { json in
@@ -56,15 +77,15 @@ class NetworkService {
     
     func getNewsfeed(startTime: Int? = nil,
                      startFrom: String? = nil,
-                     completion: @escaping ([News], String?) -> Void)
-    {
+                     completion: @escaping ([News], String?) -> Void) {
+        
         let path = "/method/newsfeed.get"
-        var params = [
-            "filters" : "post",
-            "count" : "20"
-        ]
+        var params = ["filters" : "post",
+                      "count" : "20"]
+        
         if startTime != nil { params["start_time"] = String(startTime!) }
         if startFrom != nil { params["start_from"] = startFrom }
+        
         guard let url = url(from: path, params: params) else { return }
         let request = URLRequest(url: url)
         
@@ -109,7 +130,6 @@ class NetworkService {
                     }
                 }
             }
-            
             dispatchGroup.notify(queue: .main) {
                 completion(news, nextFrom)
             }

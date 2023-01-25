@@ -8,32 +8,42 @@
 import SwiftUI
 import ASCollectionView
 
-struct GalleryView: View {
-    
+struct Gallery: View {
+    @ObservedObject var viewModel: PhotoViewModel
     let friend: Friend
+    let columns = [
+        GridItem(.flexible(minimum: 0, maximum: .infinity), spacing: 0, alignment: .center),
+        GridItem(.flexible(minimum: 0, maximum: .infinity), spacing: 0, alignment: .center),
+        GridItem(.flexible(minimum: 0, maximum: .infinity), spacing: 0, alignment: .center),
+    ]
     
-    @State private var photos: [Photo] = Array(repeating: Photo(), count: 20)
+    init(viewModel: PhotoViewModel, friend: Friend) {
+        self.viewModel = viewModel
+        self.friend = friend
+    }
     
     var body: some View {
-        ASCollectionView(data: photos) { item, _ in
-            item
+        GeometryReader { geometry in
+            ScrollView(.vertical) {
+                LazyVGrid(columns: columns, spacing: 0) {
+                    if let photos = viewModel.photos {
+                        ForEach(photos) {photo in
+                            PhotoView(photo: photo)
+                                .frame(height: geometry.size.width/3)
+                        }
+                    }
+                }
+            }
         }
-        .layout {
-            .grid(
-                layoutMode:.fixedNumberOfColumns(3),
-                itemSpacing: 4,
-                lineSpacing: 20
-            )
+        .onAppear {
+            viewModel.fetch(userId: friend.id)
         }
-        .padding(.top, 20)
-        .navigationTitle("Gallery")
     }
 }
 
-//struct GalleryView_Previews: PreviewProvider {
-////    static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatarUrlString: "")
-//    
-//    static var previews: some View {
-////        GalleryView(friend: friend)
-//    }
-//}
+struct Gallery_Previews: PreviewProvider {
+    static let friend: Friend = Friend(id: 0, firstName: "FirstName", lastName: "LastName", avatarUrlString: "", networkStatus: 1, friendStatus: 0)
+    static var previews: some View {
+        Gallery(viewModel: PhotoViewModel(), friend: friend)
+    }
+}

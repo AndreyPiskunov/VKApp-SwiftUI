@@ -27,6 +27,9 @@
 		CE634FFE296B013B0047A375 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = CE634FFD296B013B0047A375 /* ASCollectionView */; };
 		CE635000296B185B0047A375 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE634FFF296B185B0047A375 /* PhotoModel.swift */; };
 		CEAA401F29728B6200E5141E /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA401E29728B6200E5141E /* GroupViewModel.swift */; };
+		CEAAE005297550A000CD2B0E /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAE004297550A000CD2B0E /* PhotoViewModel.swift */; };
+		CEBCF1F729812951005A3C96 /* SubsidiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCF1F629812951005A3C96 /* SubsidiaryModel.swift */; };
+		CEBCF1F929812A78005A3C96 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCF1F829812A78005A3C96 /* PhotoView.swift */; };
 		CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC029599C9500C3E9FC /* FriendRow.swift */; };
 		CEC6ECC3295A004700C3E9FC /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC2295A004700C3E9FC /* GroupRow.swift */; };
 		CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECC4295A043900C3E9FC /* CellAvatarView.swift */; };
@@ -59,6 +62,9 @@
 		CE634FFA296AFD4E0047A375 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		CE634FFF296B185B0047A375 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		CEAA401E29728B6200E5141E /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		CEAAE004297550A000CD2B0E /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		CEBCF1F629812951005A3C96 /* SubsidiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidiaryModel.swift; sourceTree = "<group>"; };
+		CEBCF1F829812A78005A3C96 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		CEBF93D529685106003CCD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEC6ECC029599C9500C3E9FC /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 		CEC6ECC2295A004700C3E9FC /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				CE571239295D92F5009EA5C0 /* FriendsListView.swift */,
 				CE57123B295D935B009EA5C0 /* GroupsListView.swift */,
 				CE634FFA296AFD4E0047A375 /* GalleryView.swift */,
+				CEBCF1F829812A78005A3C96 /* PhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +173,8 @@
 				CE634FF8296AF6D80047A375 /* GroupModel.swift */,
 				CEAA401E29728B6200E5141E /* GroupViewModel.swift */,
 				CE634FFF296B185B0047A375 /* PhotoModel.swift */,
+				CEAAE004297550A000CD2B0E /* PhotoViewModel.swift */,
+				CEBCF1F629812951005A3C96 /* SubsidiaryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,8 +297,10 @@
 				CE635000296B185B0047A375 /* PhotoModel.swift in Sources */,
 				CEC6ECC5295A043900C3E9FC /* CellAvatarView.swift in Sources */,
 				CE5017AA295C391200AA33FF /* StartView.swift in Sources */,
+				CEAAE005297550A000CD2B0E /* PhotoViewModel.swift in Sources */,
 				CE133AAF2955A29000428B48 /* LoginView.swift in Sources */,
 				CED3753A2973D81A002D2471 /* OnlineStatusView.swift in Sources */,
+				CEBCF1F729812951005A3C96 /* SubsidiaryModel.swift in Sources */,
 				CED375422973E1BC002D2471 /* Date+Extension.swift in Sources */,
 				CE14156A29714DF300A64F2C /* Response.swift in Sources */,
 				CED3753C2973D9C3002D2471 /* NewsViewModel.swift in Sources */,
@@ -299,6 +310,7 @@
 				CE279AA5295DDF61000D08C6 /* AppView.swift in Sources */,
 				CE57123A295D92F5009EA5C0 /* FriendsListView.swift in Sources */,
 				CE133AAD2955A29000428B48 /* VK_SwiftUIApp.swift in Sources */,
+				CEBCF1F929812A78005A3C96 /* PhotoView.swift in Sources */,
 				CEC6ECC129599C9500C3E9FC /* FriendRow.swift in Sources */,
 				CECD1F21296EF02F00250862 /* VKLoginWebView.swift in Sources */,
 			);

@@ -26,7 +26,7 @@ struct FriendRow: View {
 
 struct FriendRow_Previews: PreviewProvider {
     
-    static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatarUrlString: "", networkStatus: 1)
+    static let friend: Friend = Friend(id: 0, firstName: "First", lastName: "Last", avatarUrlString: "", networkStatus: 1, friendStatus: 0)
     
     static var previews: some View {
         List {

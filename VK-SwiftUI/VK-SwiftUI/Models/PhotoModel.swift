@@ -5,19 +5,53 @@
 //  Created by Andrey Piskunov on 08.01.2023.
 //
 
-import SwiftUI
+import Foundation
 
-struct Photo: View, Identifiable {
+struct Photo: Codable, Identifiable {
+    let id: Int
+    let ownerID: Int
+    let sizes: [Size]
+    let likes: Likes?
     
-    var id = UUID()
-    let url = URL(string: "https://picsum.photos/100")
-    
-    var body: some View {
-        AsyncImage(url: url) { image in
-            image
-                .resizable()
-                .scaledToFill()
-        } placeholder: { ProgressView() }
-            .frame(width: 100, height: 100)
+    enum CodingKeys: String, CodingKey {
+        case id
+        case ownerID = "owner_id"
+        case sizes
+        case likes
     }
+    
+    static func findUrlInPhotoSizes(sizes: [Size], sizesByPriority: [SizeType]) -> (src: String?, ratio: CGFloat) {
+        var urlString: String?
+        var aspectRatio: CGFloat!
+        let tempDict = sizes.reduce(into: [SizeType : (String, CGFloat)]()) { result, next in
+            result[next.type] = (next.urlString, next.aspectRatio)
+        }
+        for sizesByPriority in sizesByPriority {
+            urlString = tempDict[sizesByPriority]?.0
+            aspectRatio = tempDict[sizesByPriority]?.1
+            if urlString != nil { break }
+        }
+        if urlString == nil { urlString = tempDict.first?.value.0 }
+        return (urlString, aspectRatio)
+    }
+}
+
+struct Size: Codable {
+    let urlString: String
+    let width: Int
+    let height: Int
+    let type: SizeType
+    var aspectRatio: CGFloat { CGFloat(height) / CGFloat(width) }
+    
+    enum CodingKeys: String, CodingKey {
+        case urlString = "url"
+        case width
+        case height
+        case type
+    }
+}
+
+// https://vk.com/dev/photo_sizes
+enum SizeType: String, Codable {
+    case s, m, x, o, p, q, r, y, z, w
 }

@@ -12,9 +12,9 @@ struct Group: Codable, Identifiable {
     let name: String
     let avatarUrlString: String
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
+    private enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
         case avatarUrlString = "photo_100"
     }
 }

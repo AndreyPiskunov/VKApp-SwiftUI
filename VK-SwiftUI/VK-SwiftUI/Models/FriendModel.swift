@@ -13,15 +13,15 @@ struct Friend: Codable, Identifiable {
     let lastName: String
     let avatarUrlString: String
     let networkStatus: Int?
-//    let friendStatus: Int?
+    let friendStatus: Int?
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case id = "id"
         case firstName = "first_name"
         case lastName = "last_name"
         case avatarUrlString = "photo_100"
         case networkStatus = "online"
-//        case friendStatus = "friend_status"
+        case friendStatus = "friend_status"
     }
 }
 
