@@ -12,7 +12,7 @@ struct GroupRow: View {
     
     var body: some View {
         HStack {
-            CellAvatarView()
+            CellAvatarView(url: URL(string: group.avatarUrlString))
             Text("\(group.name)")
                 .font(.system(size: 20))
                 .lineLimit(2)
@@ -25,7 +25,7 @@ struct GroupRow: View {
 }
 
 struct GroupRow_Previews: PreviewProvider {
-    static let group: Group = Group(id: 0, name: "Name", avatar: Image(systemName: ""))
+    static let group: Group = Group(id: 0, name: "Name", avatarUrlString: "")
     
     static var previews: some View {
         List {

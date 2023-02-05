@@ -21,7 +21,7 @@ struct MainView: View {
         coloredAppearance.configureWithOpaqueBackground()
         coloredAppearance.backgroundColor = UIColor(named: "BrandColor")
         coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        
+
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
@@ -32,13 +32,13 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                NewsFeedView()
+                NewsFeedView(viewModel: NewsViewModel())
                     .tabItem { Label("News", systemImage: "newspaper") }
                     .tag(Tabs.news)
-                FriendsListView()
+                FriendsListView(viewModel: FriendViewModel())
                     .tabItem { Label("Friends", systemImage: "person") }
                     .tag(Tabs.friends)
-                GroupsListView()
+                GroupsListView(viewModel: GroupViewModel())
                     .tabItem { Label("Groups", systemImage: "person.3") }
                     .tag(Tabs.groups)
             }
